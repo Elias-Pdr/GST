@@ -1,6 +1,5 @@
 
 function clickSearch(){
-    console.log("opa");
     titleH1 = document.querySelector(".titleH1")
     searchInput = document.querySelector("#searchInput")
     
