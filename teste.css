@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.cntrbox{
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 362px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.cntrbox img{
+    width: 342px;
+    height: 342px;
+    border-radius: 10px;
+}
+.cntrbox h2{
+    font-size: 22px;
+    margin: 20px 0px;
+    margin-left: 10px;
+}
+.cntrTagCaract{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+
+}
+.boxCaract{
+    width: calc(50% - 6px);
+    font-size: 16px;
+    background-color: #aaa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.cntrTagCaract :nth-child(1),.cntrTagCaract :nth-child(3){
+    margin-right: 6px;
+}
+.cntrTagCaract :nth-child(1),.cntrTagCaract :nth-child(2){
+    margin-bottom: 6px;
+}
+.preco{
+    margin: 20px 10px 10px 10px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preco strong{
+    color: rgb(29, 99, 1);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0px 0px 20px white;
+    margin-right: 6px;
+}
+.tag{
+    position: absolute;
+    top: 24px;
+    left: -4px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tag p{
+    position: relative;
+    z-index: 2;
+}
+.tagFront{
+    width: 100px;
+    height: 30px;
+    z-index: 2;
+    background: #ff004d;
+    position: absolute;
+    border-radius: 2px 0px 0px 0px;
+
+}
+
+.tagback {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    bottom: -14px;
+    left: 0px;
+    z-index: 0;
+    background-image: url(img/tagBack.png);
+}

@@ -67,7 +67,7 @@ h2{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 10px;
     padding: 10px;
 }
@@ -107,16 +107,20 @@ h2{
     font-size: 24px;
     margin-bottom: 20px;
 }
-.grid-item section p{
+.grid-item section .precoItem{
     margin-top: 10px;
     font-size: 16px;
 }
-.grid-item section p strong{
-    margin-right: 10px;
-}
 .precoItem{
     margin-top: 30px !important;
+
+}
+.precoItem p{
     font-size: 20px !important;
+}
+.precoItem strong{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
 }
 
 @media (max-width: 1040px) {
@@ -128,12 +132,21 @@ h2{
         margin-top: 8px;
         font-size: 14px;
     }
-    .precoItem {
+
+    .precoItem{
         margin-top: 28px !important;
+    
+    }
+    .precoItem p{
         font-size: 18px !important;
     }
 }
+@media (max-width: 930px) {
 
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    }
+}
 @media (max-width: 864px) {
     .grid-item section h3 {
         font-size: 24px;
@@ -143,10 +156,14 @@ h2{
         margin-top: 10px;
         font-size: 16px;
     }
-    .precoItem {
+    .precoItem{
         margin-top: 30px !important;
+    
+    }
+    .precoItem p{
         font-size: 20px !important;
     }
+    
     .grid-item {
         margin: 6px 20px;
     }
@@ -154,15 +171,26 @@ h2{
 @media (max-width: 620px) {
     .grid-item section h3 {
         font-size: 22px;
-        margin-bottom: 18px;
+        margin-bottom: 10px;
     }
     .grid-item section p {
         margin-top: 8px;
         font-size: 16px;
     }
-    .precoItem {
-        margin-top: 28px !important;
-        font-size: 20px !important;
+    .precoItem{
+        margin-top: 10px !important;
+    
+    }
+    .precoItem p{
+        font-size: 18px !important;
+        color: #222;
+    }
+    .precoItem strong{
+        color: rgb(29, 99, 1);
+        font-size: 30px;
+    }
+    .small{
+        font-size: 1px !important;
     }
     .grid-item {
         margin: 6px 10px;
@@ -190,9 +218,45 @@ h2{
     .precoItem{
         width: 100%;
         text-align: end;
+        
     }
+    .precoItem p{
+        font-size: 16px !important;
+
+    }
+    #small{
+        font-size: 16px !important;
+    }
+
     .grid-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-    
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        padding: 20px 20px 10px 20px;
+        font-size: 20px;
+    }
+    .grid-item section div {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .grid-item section div p {
+        margin-top: 8px;
+        font-size: 16px;
+        margin-right: 6px;
+        background-color: #aaa;
+        padding: 4px 8px;
+        border-radius: 6px;
+        width: 48%;
+        height: 50px;
+        display: flex
+;
+        align-items: center;
+        justify-content: center;
+    }
 }
